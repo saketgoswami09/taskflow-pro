@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class", // 🔥 THIS LINE IS REQUIRED
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 };
-
-export default nextConfig;
