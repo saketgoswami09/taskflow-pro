@@ -27,3 +27,34 @@
     font-family: 'Inter', sans-serif;
   }
 }
+
+@layer components {
+  .input-primary {
+    @apply w-full pl-10 pr-10 py-2.5 text-sm rounded-xl
+    bg-white dark:bg-zinc-900
+    border border-zinc-200 dark:border-zinc-800
+    text-zinc-800 dark:text-zinc-100
+    placeholder:text-zinc-400
+    shadow-sm transition-all duration-200
+    focus:outline-none focus:ring-2 focus:ring-indigo-500
+    group-hover:border-zinc-300 dark:group-hover:border-zinc-700;
+  }
+
+  .icon-left {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 
+    text-zinc-400 transition-colors
+    group-focus-within:text-indigo-500;
+  }
+
+  .btn-clear {
+    @apply absolute right-2 top-1/2 -translate-y-1/2 
+    p-1.5 rounded-lg
+    hover:bg-zinc-100 dark:hover:bg-zinc-800
+    transition-all duration-200;
+  }
+  .btn-x {
+    @apply text-zinc-400 
+    hover:text-zinc-600 dark:hover:text-zinc-200
+    transition-colors
+  }
+}
